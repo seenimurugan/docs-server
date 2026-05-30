@@ -1,0 +1,3067 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "setup-graph.sh",
+      "file_type": "code",
+      "source_file": "setup-graph.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "setup_graph_sh",
+      "community": 28,
+      "norm_label": "setup-graph.sh"
+    },
+    {
+      "label": "setup-graph.sh script",
+      "file_type": "code",
+      "source_file": "setup-graph.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "users_nila_developer_apps_docs_server_setup_graph_sh__entry",
+      "community": 28,
+      "norm_label": "setup-graph.sh script"
+    },
+    {
+      "label": ".opencode.json",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L1",
+      "id": "opencode_json",
+      "community": 5,
+      "norm_label": ".opencode.json"
+    },
+    {
+      "label": "mcpServers",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L2",
+      "id": "docs_server_opencode_mcpservers",
+      "community": 5,
+      "norm_label": "mcpservers"
+    },
+    {
+      "label": "code-review-graph",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L3",
+      "id": "docs_server_opencode_mcpservers_code_review_graph",
+      "community": 5,
+      "norm_label": "code-review-graph"
+    },
+    {
+      "label": "command",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L4",
+      "id": "docs_server_opencode_code_review_graph_command",
+      "community": 5,
+      "norm_label": "command"
+    },
+    {
+      "label": "args",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L5",
+      "id": "docs_server_opencode_code_review_graph_args",
+      "community": 5,
+      "norm_label": "args"
+    },
+    {
+      "label": "cwd",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L10",
+      "id": "docs_server_opencode_code_review_graph_cwd",
+      "community": 5,
+      "norm_label": "cwd"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L11",
+      "id": "docs_server_opencode_code_review_graph_type",
+      "community": 5,
+      "norm_label": "type"
+    },
+    {
+      "label": "env",
+      "file_type": "code",
+      "source_file": ".opencode.json",
+      "source_location": "L12",
+      "id": "docs_server_opencode_code_review_graph_env",
+      "community": 5,
+      "norm_label": "env"
+    },
+    {
+      "label": "undeploy.sh",
+      "file_type": "code",
+      "source_file": "undeploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "undeploy_sh",
+      "community": 31,
+      "norm_label": "undeploy.sh"
+    },
+    {
+      "label": "undeploy.sh script",
+      "file_type": "code",
+      "source_file": "undeploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "users_nila_developer_apps_docs_server_undeploy_sh__entry",
+      "community": 31,
+      "norm_label": "undeploy.sh script"
+    },
+    {
+      "label": ".mcp.json",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_config_file"
+      },
+      "id": "mcp_json",
+      "community": 25,
+      "norm_label": ".mcp.json"
+    },
+    {
+      "label": "code-review-graph",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_server"
+      },
+      "id": "docs_server_mcp_mcp_server_code_review_graph",
+      "community": 25,
+      "norm_label": "code-review-graph"
+    },
+    {
+      "label": "/Users/nila/.local/pipx/venvs/code-review-graph/bin/python",
+      "file_type": "code",
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_command"
+      },
+      "id": "mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python",
+      "community": 25,
+      "norm_label": "/users/nila/.local/pipx/venvs/code-review-graph/bin/python"
+    },
+    {
+      "label": "deploy.sh",
+      "file_type": "code",
+      "source_file": "deploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "deploy_sh",
+      "community": 27,
+      "norm_label": "deploy.sh"
+    },
+    {
+      "label": "deploy.sh script",
+      "file_type": "code",
+      "source_file": "deploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "users_nila_developer_apps_docs_server_deploy_sh__entry",
+      "community": 27,
+      "norm_label": "deploy.sh script"
+    },
+    {
+      "label": "mcp.json",
+      "file_type": "code",
+      "source_file": ".cursor/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_config_file"
+      },
+      "id": "cursor_mcp_json",
+      "community": 24,
+      "norm_label": "mcp.json"
+    },
+    {
+      "label": "code-review-graph",
+      "file_type": "code",
+      "source_file": ".cursor/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_server"
+      },
+      "id": "cursor_mcp_mcp_server_code_review_graph",
+      "community": 24,
+      "norm_label": "code-review-graph"
+    },
+    {
+      "label": "/Users/nila/.local/pipx/venvs/code-review-graph/bin/python",
+      "file_type": "code",
+      "source_file": ".cursor/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_command"
+      },
+      "id": "cursor_mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python",
+      "community": 24,
+      "norm_label": "/users/nila/.local/pipx/venvs/code-review-graph/bin/python"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L1",
+      "id": "gemini_settings_json",
+      "community": 22,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L2",
+      "id": "gemini_settings_hooks",
+      "community": 22,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L3",
+      "id": "gemini_settings_hooks_sessionstart",
+      "community": 22,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "AfterTool",
+      "file_type": "code",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L16",
+      "id": "gemini_settings_hooks_aftertool",
+      "community": 22,
+      "norm_label": "aftertool"
+    },
+    {
+      "label": "crg-update.sh",
+      "file_type": "code",
+      "source_file": ".gemini/hooks/crg-update.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "gemini_hooks_crg_update_sh",
+      "community": 30,
+      "norm_label": "crg-update.sh"
+    },
+    {
+      "label": "crg-update.sh script",
+      "file_type": "code",
+      "source_file": ".gemini/hooks/crg-update.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "users_nila_developer_apps_docs_server_gemini_hooks_crg_update_sh__entry",
+      "community": 30,
+      "norm_label": "crg-update.sh script"
+    },
+    {
+      "label": "crg-session-start.sh",
+      "file_type": "code",
+      "source_file": ".gemini/hooks/crg-session-start.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "gemini_hooks_crg_session_start_sh",
+      "community": 29,
+      "norm_label": "crg-session-start.sh"
+    },
+    {
+      "label": "crg-session-start.sh script",
+      "file_type": "code",
+      "source_file": ".gemini/hooks/crg-session-start.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "users_nila_developer_apps_docs_server_gemini_hooks_crg_session_start_sh__entry",
+      "community": 29,
+      "norm_label": "crg-session-start.sh script"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L1",
+      "id": "qoder_settings_json",
+      "community": 23,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L2",
+      "id": "qoder_settings_hooks",
+      "community": 23,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PostToolUse",
+      "file_type": "code",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L3",
+      "id": "qoder_settings_hooks_posttooluse",
+      "community": 23,
+      "norm_label": "posttooluse"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L15",
+      "id": "qoder_settings_hooks_sessionstart",
+      "community": 23,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "mcp.json",
+      "file_type": "code",
+      "source_file": ".qoder/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_config_file"
+      },
+      "id": "qoder_mcp_json",
+      "community": 26,
+      "norm_label": "mcp.json"
+    },
+    {
+      "label": "code-review-graph",
+      "file_type": "code",
+      "source_file": ".qoder/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_server"
+      },
+      "id": "qoder_mcp_mcp_server_code_review_graph",
+      "community": 26,
+      "norm_label": "code-review-graph"
+    },
+    {
+      "label": "/Users/nila/.local/pipx/venvs/code-review-graph/bin/python",
+      "file_type": "code",
+      "source_file": ".qoder/mcp.json",
+      "source_location": "L1",
+      "metadata": {
+        "mcp_kind": "mcp_command"
+      },
+      "id": "qoder_mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python",
+      "community": 26,
+      "norm_label": "/users/nila/.local/pipx/venvs/code-review-graph/bin/python"
+    },
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L1",
+      "id": "claude_settings_json",
+      "community": 21,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "id": "claude_settings_hooks",
+      "community": 21,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "PostToolUse",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "id": "claude_settings_hooks_posttooluse",
+      "community": 21,
+      "norm_label": "posttooluse"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".claude/settings.json",
+      "source_location": "L15",
+      "id": "claude_settings_hooks_sessionstart",
+      "community": 21,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "QODER.md",
+      "file_type": "document",
+      "source_file": "QODER.md",
+      "source_location": "L1",
+      "id": "qoder_md",
+      "community": 14,
+      "norm_label": "qoder.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": "QODER.md",
+      "source_location": "L2",
+      "id": "docs_server_qoder_mcp_tools_code_review_graph",
+      "community": 14,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": "QODER.md",
+      "source_location": "L10",
+      "id": "docs_server_qoder_when_to_use_graph_tools_first",
+      "community": 14,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": "QODER.md",
+      "source_location": "L20",
+      "id": "docs_server_qoder_key_tools",
+      "community": 14,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "QODER.md",
+      "source_location": "L33",
+      "id": "docs_server_qoder_workflow",
+      "community": 14,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 1,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "docs-server",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "docs_server_readme_docs_server",
+      "community": 1,
+      "norm_label": "docs-server"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "docs_server_readme_architecture",
+      "community": 1,
+      "norm_label": "architecture"
+    },
+    {
+      "label": "Auto-discovery",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "id": "docs_server_readme_auto_discovery",
+      "community": 1,
+      "norm_label": "auto-discovery"
+    },
+    {
+      "label": "Top-level landing page",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "docs_server_readme_top_level_landing_page",
+      "community": 1,
+      "norm_label": "top-level landing page"
+    },
+    {
+      "label": "Auth: gh CLI token (no PAT)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "id": "docs_server_readme_auth_gh_cli_token_no_pat",
+      "community": 1,
+      "norm_label": "auth: gh cli token (no pat)"
+    },
+    {
+      "label": "Depends on",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "id": "docs_server_readme_depends_on",
+      "community": 1,
+      "norm_label": "depends on"
+    },
+    {
+      "label": "Quick start",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "id": "docs_server_readme_quick_start",
+      "community": 1,
+      "norm_label": "quick start"
+    },
+    {
+      "label": "Access",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "id": "docs_server_readme_access",
+      "community": 1,
+      "norm_label": "access"
+    },
+    {
+      "label": "Watch the puller",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L68",
+      "id": "docs_server_readme_watch_the_puller",
+      "community": 1,
+      "norm_label": "watch the puller"
+    },
+    {
+      "label": "DOCS_SOURCE switch",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L76",
+      "id": "docs_server_readme_docs_source_switch",
+      "community": 1,
+      "norm_label": "docs_source switch"
+    },
+    {
+      "label": "Tear down",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L80",
+      "id": "docs_server_readme_tear_down",
+      "community": 1,
+      "norm_label": "tear down"
+    },
+    {
+      "label": "Docs",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "id": "docs_server_readme_docs",
+      "community": 1,
+      "norm_label": "docs"
+    },
+    {
+      "label": "GEMINI.md",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "L1",
+      "id": "gemini_md",
+      "community": 13,
+      "norm_label": "gemini.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "L2",
+      "id": "docs_server_gemini_mcp_tools_code_review_graph",
+      "community": 13,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "L10",
+      "id": "docs_server_gemini_when_to_use_graph_tools_first",
+      "community": 13,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "L20",
+      "id": "docs_server_gemini_key_tools",
+      "community": 13,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "GEMINI.md",
+      "source_location": "L33",
+      "id": "docs_server_gemini_workflow",
+      "community": 13,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_md",
+      "community": 7,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L2",
+      "id": "docs_server_agents_mcp_tools_code_review_graph",
+      "community": 7,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L10",
+      "id": "docs_server_agents_when_to_use_graph_tools_first",
+      "community": 7,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L20",
+      "id": "docs_server_agents_key_tools",
+      "community": 7,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L33",
+      "id": "docs_server_agents_workflow",
+      "community": 7,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "id": "claude_md",
+      "community": 8,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L2",
+      "id": "docs_server_claude_mcp_tools_code_review_graph",
+      "community": 8,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L10",
+      "id": "docs_server_claude_when_to_use_graph_tools_first",
+      "community": 8,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L20",
+      "id": "docs_server_claude_key_tools",
+      "community": 8,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
+      "id": "docs_server_claude_workflow",
+      "community": 8,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L1",
+      "id": "gemini_skills_debug_issue_skill_md",
+      "community": 15,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Debug Issue",
+      "file_type": "document",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L6",
+      "id": "gemini_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "community": 15,
+      "norm_label": "debug issue"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L10",
+      "id": "gemini_skills_debug_issue_skill_md_debug_issue_skill_steps",
+      "community": 15,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L18",
+      "id": "gemini_skills_debug_issue_skill_md_debug_issue_skill_tips",
+      "community": 15,
+      "norm_label": "tips"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L24",
+      "id": "gemini_skills_debug_issue_skill_md_debug_issue_skill_token_efficiency_rules",
+      "community": 15,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L1",
+      "id": "gemini_skills_refactor_safely_skill_md",
+      "community": 17,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Refactor Safely",
+      "file_type": "document",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L6",
+      "id": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "community": 17,
+      "norm_label": "refactor safely"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L10",
+      "id": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_steps",
+      "community": 17,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Safety Checks",
+      "file_type": "document",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L18",
+      "id": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_safety_checks",
+      "community": 17,
+      "norm_label": "safety checks"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L25",
+      "id": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_token_efficiency_rules",
+      "community": 17,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L1",
+      "id": "gemini_skills_explore_codebase_skill_md",
+      "community": 16,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Explore Codebase",
+      "file_type": "document",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L6",
+      "id": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "community": 16,
+      "norm_label": "explore codebase"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L10",
+      "id": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_steps",
+      "community": 16,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L19",
+      "id": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_tips",
+      "community": 16,
+      "norm_label": "tips"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L25",
+      "id": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_token_efficiency_rules",
+      "community": 16,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L1",
+      "id": "gemini_skills_review_changes_skill_md",
+      "community": 18,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Review Changes",
+      "file_type": "document",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L6",
+      "id": "gemini_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "community": 18,
+      "norm_label": "review changes"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L10",
+      "id": "gemini_skills_review_changes_skill_md_review_changes_skill_steps",
+      "community": 18,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Output Format",
+      "file_type": "document",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L18",
+      "id": "gemini_skills_review_changes_skill_md_review_changes_skill_output_format",
+      "community": 18,
+      "norm_label": "output format"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L26",
+      "id": "gemini_skills_review_changes_skill_md_review_changes_skill_token_efficiency_rules",
+      "community": 18,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "skill.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L1",
+      "id": "claude_skills_debug_issue_skill_md",
+      "community": 9,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Debug Issue",
+      "file_type": "document",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L6",
+      "id": "claude_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "community": 9,
+      "norm_label": "debug issue"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L10",
+      "id": "claude_skills_debug_issue_skill_md_debug_issue_skill_steps",
+      "community": 9,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L18",
+      "id": "claude_skills_debug_issue_skill_md_debug_issue_skill_tips",
+      "community": 9,
+      "norm_label": "tips"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L24",
+      "id": "claude_skills_debug_issue_skill_md_debug_issue_skill_token_efficiency_rules",
+      "community": 9,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "skill.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L1",
+      "id": "claude_skills_refactor_safely_skill_md",
+      "community": 11,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Refactor Safely",
+      "file_type": "document",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L6",
+      "id": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "community": 11,
+      "norm_label": "refactor safely"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L10",
+      "id": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_steps",
+      "community": 11,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Safety Checks",
+      "file_type": "document",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L18",
+      "id": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_safety_checks",
+      "community": 11,
+      "norm_label": "safety checks"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L25",
+      "id": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_token_efficiency_rules",
+      "community": 11,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "skill.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L1",
+      "id": "claude_skills_explore_codebase_skill_md",
+      "community": 10,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Explore Codebase",
+      "file_type": "document",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L6",
+      "id": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "community": 10,
+      "norm_label": "explore codebase"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L10",
+      "id": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_steps",
+      "community": 10,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Tips",
+      "file_type": "document",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L19",
+      "id": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_tips",
+      "community": 10,
+      "norm_label": "tips"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L25",
+      "id": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_token_efficiency_rules",
+      "community": 10,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "skill.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L1",
+      "id": "claude_skills_review_changes_skill_md",
+      "community": 12,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Review Changes",
+      "file_type": "document",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L6",
+      "id": "claude_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "community": 12,
+      "norm_label": "review changes"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L10",
+      "id": "claude_skills_review_changes_skill_md_review_changes_skill_steps",
+      "community": 12,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Output Format",
+      "file_type": "document",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L18",
+      "id": "claude_skills_review_changes_skill_md_review_changes_skill_output_format",
+      "community": 12,
+      "norm_label": "output format"
+    },
+    {
+      "label": "Token Efficiency Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L26",
+      "id": "claude_skills_review_changes_skill_md_review_changes_skill_token_efficiency_rules",
+      "community": 12,
+      "norm_label": "token efficiency rules"
+    },
+    {
+      "label": "ARCHITECTURE.md",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "docs_architecture_md",
+      "community": 2,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "Docs site \u2014 Architecture & Tech Stack",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L1",
+      "id": "docs_architecture_docs_site_architecture_tech_stack",
+      "community": 2,
+      "norm_label": "docs site \u2014 architecture & tech stack"
+    },
+    {
+      "label": "What is it",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L3",
+      "id": "docs_architecture_what_is_it",
+      "community": 2,
+      "norm_label": "what is it"
+    },
+    {
+      "label": "Tech stack",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L7",
+      "id": "docs_architecture_tech_stack",
+      "community": 2,
+      "norm_label": "tech stack"
+    },
+    {
+      "label": "Current content architecture",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L20",
+      "id": "docs_architecture_current_content_architecture",
+      "community": 2,
+      "norm_label": "current content architecture"
+    },
+    {
+      "label": "Source code",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L41",
+      "id": "docs_architecture_source_code",
+      "community": 2,
+      "norm_label": "source code"
+    },
+    {
+      "label": "Design decisions",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L50",
+      "id": "docs_architecture_design_decisions",
+      "community": 2,
+      "norm_label": "design decisions"
+    },
+    {
+      "label": "How content gets to the site",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L58",
+      "id": "docs_architecture_how_content_gets_to_the_site",
+      "community": 2,
+      "norm_label": "how content gets to the site"
+    },
+    {
+      "label": "Why this serves multi-app docs",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L68",
+      "id": "docs_architecture_why_this_serves_multi_app_docs",
+      "community": 2,
+      "norm_label": "why this serves multi-app docs"
+    },
+    {
+      "label": "Future: migration to git-sync",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L77",
+      "id": "docs_architecture_future_migration_to_git_sync",
+      "community": 2,
+      "norm_label": "future: migration to git-sync"
+    },
+    {
+      "label": "Reference",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L81",
+      "id": "docs_architecture_reference",
+      "community": 2,
+      "norm_label": "reference"
+    },
+    {
+      "label": "USAGE.md",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L1",
+      "id": "docs_usage_md",
+      "community": 4,
+      "norm_label": "usage.md"
+    },
+    {
+      "label": "Docs site \u2014 Usage",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L1",
+      "id": "docs_usage_docs_site_usage",
+      "community": 4,
+      "norm_label": "docs site \u2014 usage"
+    },
+    {
+      "label": "Read on phone / laptop",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L5",
+      "id": "docs_usage_read_on_phone_laptop",
+      "community": 4,
+      "norm_label": "read on phone / laptop"
+    },
+    {
+      "label": "Add a new file",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L9",
+      "id": "docs_usage_add_a_new_file",
+      "community": 4,
+      "norm_label": "add a new file"
+    },
+    {
+      "label": "Add to the sidebar",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L22",
+      "id": "docs_usage_add_to_the_sidebar",
+      "community": 4,
+      "norm_label": "add to the sidebar"
+    },
+    {
+      "label": "Edit existing files",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L35",
+      "id": "docs_usage_edit_existing_files",
+      "community": 4,
+      "norm_label": "edit existing files"
+    },
+    {
+      "label": "Delete files",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L44",
+      "id": "docs_usage_delete_files",
+      "community": 4,
+      "norm_label": "delete files"
+    },
+    {
+      "label": "URL routing rules",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L51",
+      "id": "docs_usage_url_routing_rules",
+      "community": 4,
+      "norm_label": "url routing rules"
+    },
+    {
+      "label": "Caching gotcha",
+      "file_type": "document",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L57",
+      "id": "docs_usage_caching_gotcha",
+      "community": 4,
+      "norm_label": "caching gotcha"
+    },
+    {
+      "label": "MIGRATION-TO-GIT-SYNC.md",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L1",
+      "id": "docs_migration_to_git_sync_md",
+      "community": 3,
+      "norm_label": "migration-to-git-sync.md"
+    },
+    {
+      "label": "Migration to git-sync \u2014 DONE",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L1",
+      "id": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "community": 3,
+      "norm_label": "migration to git-sync \u2014 done"
+    },
+    {
+      "label": "What changed",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L5",
+      "id": "docs_migration_to_git_sync_what_changed",
+      "community": 3,
+      "norm_label": "what changed"
+    },
+    {
+      "label": "New architecture",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L15",
+      "id": "docs_migration_to_git_sync_new_architecture",
+      "community": 3,
+      "norm_label": "new architecture"
+    },
+    {
+      "label": "Auth: gh CLI token (not a PAT)",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L31",
+      "id": "docs_migration_to_git_sync_auth_gh_cli_token_not_a_pat",
+      "community": 3,
+      "norm_label": "auth: gh cli token (not a pat)"
+    },
+    {
+      "label": "Repo for top-level docs",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L45",
+      "id": "docs_migration_to_git_sync_repo_for_top_level_docs",
+      "community": 3,
+      "norm_label": "repo for top-level docs"
+    },
+    {
+      "label": "Auto-discovery",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L49",
+      "id": "docs_migration_to_git_sync_auto_discovery",
+      "community": 3,
+      "norm_label": "auto-discovery"
+    },
+    {
+      "label": "Old state (for reference)",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L53",
+      "id": "docs_migration_to_git_sync_old_state_for_reference",
+      "community": 3,
+      "norm_label": "old state (for reference)"
+    },
+    {
+      "label": "Fallback",
+      "file_type": "document",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L57",
+      "id": "docs_migration_to_git_sync_fallback",
+      "community": 3,
+      "norm_label": "fallback"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "id": "docs_readme_md",
+      "community": 6,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Docs site \u2014 overview",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "id": "docs_readme_docs_site_overview",
+      "community": 6,
+      "norm_label": "docs site \u2014 overview"
+    },
+    {
+      "label": "Access",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L5",
+      "id": "docs_readme_access",
+      "community": 6,
+      "norm_label": "access"
+    },
+    {
+      "label": "Detailed docs",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L13",
+      "id": "docs_readme_detailed_docs",
+      "community": 6,
+      "norm_label": "detailed docs"
+    },
+    {
+      "label": "How content updates work",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L20",
+      "id": "docs_readme_how_content_updates_work",
+      "community": 6,
+      "norm_label": "how content updates work"
+    },
+    {
+      "label": "How to deploy",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L24",
+      "id": "docs_readme_how_to_deploy",
+      "community": 6,
+      "norm_label": "how to deploy"
+    },
+    {
+      "label": "MAINTENANCE.md",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L1",
+      "id": "docs_maintenance_md",
+      "community": 0,
+      "norm_label": "maintenance.md"
+    },
+    {
+      "label": "Docs site \u2014 Maintenance",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L1",
+      "id": "docs_maintenance_docs_site_maintenance",
+      "community": 0,
+      "norm_label": "docs site \u2014 maintenance"
+    },
+    {
+      "label": "Deploy / redeploy",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L3",
+      "id": "docs_maintenance_deploy_redeploy",
+      "community": 0,
+      "norm_label": "deploy / redeploy"
+    },
+    {
+      "label": "Common operations",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L16",
+      "id": "docs_maintenance_common_operations",
+      "community": 0,
+      "norm_label": "common operations"
+    },
+    {
+      "label": "Restart",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L18",
+      "id": "docs_maintenance_restart",
+      "community": 0,
+      "norm_label": "restart"
+    },
+    {
+      "label": "Logs",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L23",
+      "id": "docs_maintenance_logs",
+      "community": 0,
+      "norm_label": "logs"
+    },
+    {
+      "label": "Status",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L28",
+      "id": "docs_maintenance_status",
+      "community": 0,
+      "norm_label": "status"
+    },
+    {
+      "label": "Update sidebar",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L33",
+      "id": "docs_maintenance_update_sidebar",
+      "community": 0,
+      "norm_label": "update sidebar"
+    },
+    {
+      "label": "Update Docsify configuration",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L50",
+      "id": "docs_maintenance_update_docsify_configuration",
+      "community": 0,
+      "norm_label": "update docsify configuration"
+    },
+    {
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L58",
+      "id": "docs_maintenance_troubleshooting",
+      "community": 0,
+      "norm_label": "troubleshooting"
+    },
+    {
+      "label": "Page shows 404 for a known-good file",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L60",
+      "id": "docs_maintenance_page_shows_404_for_a_known_good_file",
+      "community": 0,
+      "norm_label": "page shows 404 for a known-good file"
+    },
+    {
+      "label": "Sidebar link goes to the wrong page (e.g. clicking \"Reminders \u2192 Overview\" shows Grocy)",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L67",
+      "id": "docs_maintenance_sidebar_link_goes_to_the_wrong_page_e_g_clicking_reminders_overview_shows_grocy",
+      "community": 0,
+      "norm_label": "sidebar link goes to the wrong page (e.g. clicking \"reminders \u2192 overview\" shows grocy)"
+    },
+    {
+      "label": "Port-forward returns 000",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L70",
+      "id": "docs_maintenance_port_forward_returns_000",
+      "community": 0,
+      "norm_label": "port-forward returns 000"
+    },
+    {
+      "label": "Sidebar links broken after moving files",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L75",
+      "id": "docs_maintenance_sidebar_links_broken_after_moving_files",
+      "community": 0,
+      "norm_label": "sidebar links broken after moving files"
+    },
+    {
+      "label": "Pod won't start",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L78",
+      "id": "docs_maintenance_pod_won_t_start",
+      "community": 0,
+      "norm_label": "pod won't start"
+    },
+    {
+      "label": "Files don't appear (despite being in the folder)",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L84",
+      "id": "docs_maintenance_files_don_t_appear_despite_being_in_the_folder",
+      "community": 0,
+      "norm_label": "files don't appear (despite being in the folder)"
+    },
+    {
+      "label": "Tailscale URL fails but port-forward works",
+      "file_type": "document",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L90",
+      "id": "docs_maintenance_tailscale_url_fails_but_port_forward_works",
+      "community": 0,
+      "norm_label": "tailscale url fails but port-forward works"
+    },
+    {
+      "label": "code-review-graph.instruction.md",
+      "file_type": "document",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L1",
+      "id": "github_code_review_graph_instruction_md",
+      "community": 19,
+      "norm_label": "code-review-graph.instruction.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L9",
+      "id": "github_code_review_graph_instruction_mcp_tools_code_review_graph",
+      "community": 19,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L17",
+      "id": "github_code_review_graph_instruction_when_to_use_graph_tools_first",
+      "community": 19,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L28",
+      "id": "github_code_review_graph_instruction_key_tools",
+      "community": 19,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L41",
+      "id": "github_code_review_graph_instruction_workflow",
+      "community": 19,
+      "norm_label": "workflow"
+    },
+    {
+      "label": "code-review-graph.md",
+      "file_type": "document",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L1",
+      "id": "kiro_steering_code_review_graph_md",
+      "community": 20,
+      "norm_label": "code-review-graph.md"
+    },
+    {
+      "label": "MCP Tools: code-review-graph",
+      "file_type": "document",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L2",
+      "id": "steering_code_review_graph_mcp_tools_code_review_graph",
+      "community": 20,
+      "norm_label": "mcp tools: code-review-graph"
+    },
+    {
+      "label": "When to use graph tools FIRST",
+      "file_type": "document",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L10",
+      "id": "steering_code_review_graph_when_to_use_graph_tools_first",
+      "community": 20,
+      "norm_label": "when to use graph tools first"
+    },
+    {
+      "label": "Key Tools",
+      "file_type": "document",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L20",
+      "id": "steering_code_review_graph_key_tools",
+      "community": 20,
+      "norm_label": "key tools"
+    },
+    {
+      "label": "Workflow",
+      "file_type": "document",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L33",
+      "id": "steering_code_review_graph_workflow",
+      "community": 20,
+      "norm_label": "workflow"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "setup-graph.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "setup_graph_sh",
+      "target": "users_nila_developer_apps_docs_server_setup_graph_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "opencode_json",
+      "target": "docs_server_opencode_mcpservers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers",
+      "target": "docs_server_opencode_mcpservers_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers_code_review_graph",
+      "target": "docs_server_opencode_code_review_graph_args",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers_code_review_graph",
+      "target": "docs_server_opencode_code_review_graph_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers_code_review_graph",
+      "target": "docs_server_opencode_code_review_graph_cwd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers_code_review_graph",
+      "target": "docs_server_opencode_code_review_graph_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".opencode.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "docs_server_opencode_mcpservers_code_review_graph",
+      "target": "docs_server_opencode_code_review_graph_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "undeploy.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "undeploy_sh",
+      "target": "users_nila_developer_apps_docs_server_undeploy_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "mcp_json",
+      "target": "docs_server_mcp_mcp_server_code_review_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "command",
+      "source": "docs_server_mcp_mcp_server_code_review_graph",
+      "target": "mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deploy.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "deploy_sh",
+      "target": "users_nila_developer_apps_docs_server_deploy_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "cursor_mcp_json",
+      "target": "cursor_mcp_mcp_server_code_review_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".cursor/mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "command",
+      "source": "cursor_mcp_mcp_server_code_review_graph",
+      "target": "cursor_mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "gemini_settings_json",
+      "target": "gemini_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "gemini_settings_hooks",
+      "target": "gemini_settings_hooks_aftertool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "gemini_settings_hooks",
+      "target": "gemini_settings_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/hooks/crg-update.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "gemini_hooks_crg_update_sh",
+      "target": "users_nila_developer_apps_docs_server_gemini_hooks_crg_update_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/hooks/crg-session-start.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "gemini_hooks_crg_session_start_sh",
+      "target": "users_nila_developer_apps_docs_server_gemini_hooks_crg_session_start_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "qoder_settings_json",
+      "target": "qoder_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "qoder_settings_hooks",
+      "target": "qoder_settings_hooks_posttooluse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".qoder/settings.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "qoder_settings_hooks",
+      "target": "qoder_settings_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".qoder/mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "qoder_mcp_json",
+      "target": "qoder_mcp_mcp_server_code_review_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".qoder/mcp.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "command",
+      "source": "qoder_mcp_mcp_server_code_review_graph",
+      "target": "qoder_mcp_json_mcp_command_users_nila_local_pipx_venvs_code_review_graph_bin_python"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings_json",
+      "target": "claude_settings_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_posttooluse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_settings_hooks",
+      "target": "claude_settings_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "QODER.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "qoder_md",
+      "target": "docs_server_qoder_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "QODER.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_server_qoder_mcp_tools_code_review_graph",
+      "target": "docs_server_qoder_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "QODER.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_server_qoder_mcp_tools_code_review_graph",
+      "target": "docs_server_qoder_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "QODER.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_server_qoder_mcp_tools_code_review_graph",
+      "target": "docs_server_qoder_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "docs_server_readme_docs_server",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_depends_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_docs_source_switch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_quick_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_tear_down",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "docs_server_readme_docs_server",
+      "target": "docs_server_readme_watch_the_puller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "docs_server_readme_architecture",
+      "target": "docs_server_readme_auth_gh_cli_token_no_pat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "docs_server_readme_architecture",
+      "target": "docs_server_readme_auto_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "docs_server_readme_architecture",
+      "target": "docs_server_readme_top_level_landing_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GEMINI.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "gemini_md",
+      "target": "docs_server_gemini_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GEMINI.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_server_gemini_mcp_tools_code_review_graph",
+      "target": "docs_server_gemini_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GEMINI.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_server_gemini_mcp_tools_code_review_graph",
+      "target": "docs_server_gemini_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GEMINI.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_server_gemini_mcp_tools_code_review_graph",
+      "target": "docs_server_gemini_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "agents_md",
+      "target": "docs_server_agents_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_server_agents_mcp_tools_code_review_graph",
+      "target": "docs_server_agents_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_server_agents_mcp_tools_code_review_graph",
+      "target": "docs_server_agents_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_server_agents_mcp_tools_code_review_graph",
+      "target": "docs_server_agents_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_md",
+      "target": "docs_server_claude_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_server_claude_mcp_tools_code_review_graph",
+      "target": "docs_server_claude_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_server_claude_mcp_tools_code_review_graph",
+      "target": "docs_server_claude_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_server_claude_mcp_tools_code_review_graph",
+      "target": "docs_server_claude_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gemini_skills_debug_issue_skill_md",
+      "target": "gemini_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "gemini_skills_debug_issue_skill_md",
+      "target": "gemini_skills_debug_issue_skill_md_debug_issue_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gemini_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "target": "gemini_skills_debug_issue_skill_md_debug_issue_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/debug-issue/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "gemini_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "target": "gemini_skills_debug_issue_skill_md_debug_issue_skill_tips",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gemini_skills_refactor_safely_skill_md",
+      "target": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "gemini_skills_refactor_safely_skill_md",
+      "target": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "target": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_safety_checks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/refactor-safely/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "target": "gemini_skills_refactor_safely_skill_md_refactor_safely_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gemini_skills_explore_codebase_skill_md",
+      "target": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "gemini_skills_explore_codebase_skill_md",
+      "target": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "target": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/explore-codebase/SKILL.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "target": "gemini_skills_explore_codebase_skill_md_explore_codebase_skill_tips",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gemini_skills_review_changes_skill_md",
+      "target": "gemini_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "gemini_skills_review_changes_skill_md",
+      "target": "gemini_skills_review_changes_skill_md_review_changes_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "gemini_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "target": "gemini_skills_review_changes_skill_md_review_changes_skill_output_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".gemini/skills/review-changes/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gemini_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "target": "gemini_skills_review_changes_skill_md_review_changes_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_debug_issue_skill_md",
+      "target": "claude_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "claude_skills_debug_issue_skill_md",
+      "target": "claude_skills_debug_issue_skill_md_debug_issue_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "target": "claude_skills_debug_issue_skill_md_debug_issue_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/debug-issue/skill.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_skills_debug_issue_skill_md_debug_issue_skill_debug_issue",
+      "target": "claude_skills_debug_issue_skill_md_debug_issue_skill_tips",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_refactor_safely_skill_md",
+      "target": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_skills_refactor_safely_skill_md",
+      "target": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "target": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_safety_checks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/refactor-safely/skill.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_refactor_safely",
+      "target": "claude_skills_refactor_safely_skill_md_refactor_safely_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_explore_codebase_skill_md",
+      "target": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_skills_explore_codebase_skill_md",
+      "target": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "target": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/explore-codebase/skill.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_explore_codebase",
+      "target": "claude_skills_explore_codebase_skill_md_explore_codebase_skill_tips",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_review_changes_skill_md",
+      "target": "claude_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "claude_skills_review_changes_skill_md",
+      "target": "claude_skills_review_changes_skill_md_review_changes_skill_token_efficiency_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "target": "claude_skills_review_changes_skill_md_review_changes_skill_output_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/review-changes/skill.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_review_changes_skill_md_review_changes_skill_review_changes",
+      "target": "claude_skills_review_changes_skill_md_review_changes_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_architecture_md",
+      "target": "docs_architecture_docs_site_architecture_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_current_content_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_design_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_future_migration_to_git_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_how_content_gets_to_the_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_source_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_tech_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_what_is_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "docs_architecture_docs_site_architecture_tech_stack",
+      "target": "docs_architecture_why_this_serves_multi_app_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_usage_md",
+      "target": "docs_usage_docs_site_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_add_a_new_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_add_to_the_sidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_caching_gotcha",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_delete_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_edit_existing_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_read_on_phone_laptop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/USAGE.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "docs_usage_docs_site_usage",
+      "target": "docs_usage_url_routing_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_md",
+      "target": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_auth_gh_cli_token_not_a_pat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_auto_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_new_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_old_state_for_reference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_repo_for_top_level_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MIGRATION-TO-GIT-SYNC.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_migration_to_git_sync_migration_to_git_sync_done",
+      "target": "docs_migration_to_git_sync_what_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_readme_md",
+      "target": "docs_readme_docs_site_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_readme_docs_site_overview",
+      "target": "docs_readme_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "docs_readme_docs_site_overview",
+      "target": "docs_readme_detailed_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_readme_docs_site_overview",
+      "target": "docs_readme_how_content_updates_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_readme_docs_site_overview",
+      "target": "docs_readme_how_to_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_maintenance_md",
+      "target": "docs_maintenance_docs_site_maintenance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_maintenance_docs_site_maintenance",
+      "target": "docs_maintenance_common_operations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_maintenance_docs_site_maintenance",
+      "target": "docs_maintenance_deploy_redeploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "docs_maintenance_docs_site_maintenance",
+      "target": "docs_maintenance_troubleshooting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "docs_maintenance_docs_site_maintenance",
+      "target": "docs_maintenance_update_docsify_configuration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_maintenance_docs_site_maintenance",
+      "target": "docs_maintenance_update_sidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "docs_maintenance_common_operations",
+      "target": "docs_maintenance_logs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "docs_maintenance_common_operations",
+      "target": "docs_maintenance_restart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "docs_maintenance_common_operations",
+      "target": "docs_maintenance_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_files_don_t_appear_despite_being_in_the_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_page_shows_404_for_a_known_good_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_pod_won_t_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_port_forward_returns_000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_sidebar_link_goes_to_the_wrong_page_e_g_clicking_reminders_overview_shows_grocy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_sidebar_links_broken_after_moving_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/MAINTENANCE.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "docs_maintenance_troubleshooting",
+      "target": "docs_maintenance_tailscale_url_fails_but_port_forward_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "github_code_review_graph_instruction_md",
+      "target": "github_code_review_graph_instruction_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "github_code_review_graph_instruction_mcp_tools_code_review_graph",
+      "target": "github_code_review_graph_instruction_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "github_code_review_graph_instruction_mcp_tools_code_review_graph",
+      "target": "github_code_review_graph_instruction_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/code-review-graph.instruction.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "github_code_review_graph_instruction_mcp_tools_code_review_graph",
+      "target": "github_code_review_graph_instruction_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "kiro_steering_code_review_graph_md",
+      "target": "steering_code_review_graph_mcp_tools_code_review_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "steering_code_review_graph_mcp_tools_code_review_graph",
+      "target": "steering_code_review_graph_key_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "steering_code_review_graph_mcp_tools_code_review_graph",
+      "target": "steering_code_review_graph_when_to_use_graph_tools_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".kiro/steering/code-review-graph.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "steering_code_review_graph_mcp_tools_code_review_graph",
+      "target": "steering_code_review_graph_workflow",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "2cf3c758b0d61830b7cbe2f78cdaea881c807622"
+}
