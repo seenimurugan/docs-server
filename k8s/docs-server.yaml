@@ -1,0 +1,191 @@
+# docs-server.yaml — nginx + Docsify static docs server
+# Serves markdown docs from a hostPath (DOCS_HOST_PATH) via Tailscale ingress.
+# Deploy with: ./deploy.sh (envsubst-templated)
+# ---------------------------------------------------------------------------
+# Variables (set in .env):
+#   HOMELAB_NAMESPACE   — Kubernetes namespace (default: homelab)
+#   DOCS_HOST_PATH      — Absolute host path to docs folder
+#   NGINX_IMAGE         — nginx image name (default: nginx)
+#   NGINX_TAG           — nginx image tag (default: alpine)
+# ---------------------------------------------------------------------------
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: docs-content-pv
+  labels:
+    app: docs
+spec:
+  capacity:
+    storage: 100Mi
+  accessModes: [ReadOnlyMany]
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-hdd
+  hostPath:
+    path: ${DOCS_HOST_PATH}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: docs-content-pvc
+  namespace: ${HOMELAB_NAMESPACE}
+spec:
+  accessModes: [ReadOnlyMany]
+  storageClassName: local-hdd
+  resources:
+    requests:
+      storage: 100Mi
+  selector:
+    matchLabels:
+      app: docs
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docs-index
+  namespace: ${HOMELAB_NAMESPACE}
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+      <title>Homelab Docs</title>
+      <meta name="description" content="Self-hosted homelab maintenance docs">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+      <style>
+        :root {
+          --theme-color: #4263eb;
+          --base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        @media (max-width: 768px) {
+          .sidebar { width: 250px; }
+          .content { padding-top: 50px; }
+        }
+      </style>
+    </head>
+    <body>
+      <div id="app">Loading homelab docs…</div>
+      <script>
+        window.$docsify = {
+          name: 'Homelab',
+          basePath: '/docs/',
+          loadSidebar: '_sidebar.md',
+          homepage: 'README.md',
+          subMaxLevel: 3,
+          maxLevel: 4,
+          relativePath: true,
+          search: {
+            placeholder: 'Search docs…',
+            depth: 6
+          },
+          themeColor: '#4263eb',
+          auto2top: true,
+          executeScript: false
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+      <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+    </body>
+    </html>
+  nginx.conf: |
+    server {
+      listen 80;
+      root /usr/share/nginx/html;
+      index index.html;
+
+      # Serve markdown files with text/markdown content-type
+      location ~ \.md$ {
+        default_type text/markdown;
+        charset utf-8;
+        add_header Cache-Control "no-cache";
+      }
+
+      # Block AppleDouble files
+      location ~ /\._ { return 404; }
+      location ~ /\.DS_Store { return 404; }
+
+      location / { try_files $uri $uri/ /index.html; }
+    }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docs
+  namespace: ${HOMELAB_NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docs
+  template:
+    metadata:
+      labels:
+        app: docs
+    spec:
+      containers:
+        - name: nginx
+          image: ${NGINX_IMAGE}:${NGINX_TAG}
+          ports:
+            - containerPort: 80
+              name: http
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "10m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+          volumeMounts:
+            - name: content
+              mountPath: /usr/share/nginx/html/docs
+              readOnly: true
+            - name: index
+              mountPath: /usr/share/nginx/html/index.html
+              subPath: index.html
+              readOnly: true
+            - name: index
+              mountPath: /etc/nginx/conf.d/default.conf
+              subPath: nginx.conf
+              readOnly: true
+      volumes:
+        - name: content
+          persistentVolumeClaim:
+            claimName: docs-content-pvc
+        - name: index
+          configMap:
+            name: docs-index
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: docs
+  namespace: ${HOMELAB_NAMESPACE}
+spec:
+  type: ClusterIP
+  selector:
+    app: docs
+  ports:
+    - port: 80
+      targetPort: http
+      name: http
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: docs
+  namespace: ${HOMELAB_NAMESPACE}
+spec:
+  ingressClassName: tailscale
+  defaultBackend:
+    service:
+      name: docs
+      port:
+        number: 80
+  tls:
+    - hosts:
+        - docs
