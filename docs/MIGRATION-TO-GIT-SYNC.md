@@ -1,54 +1,61 @@
-# Migration to git-sync — TODO
+# Migration to git-sync — DONE
 
-## Current state
+> **Status: COMPLETED** — The migration from hostPath to a git-puller sidecar was completed on 2026-05-30.
 
-The docs-server pod mounts `$DOCS_HOST_PATH` (default `/Users/nila/Developer/agents/docs/`) directly via a hostPath PersistentVolume. This works well for a single-node OrbStack k3s setup where the Mac filesystem is always available, but it ties the pod to a specific host path and machine.
+## What changed
 
-All per-app docs (chores, reminders, homelab-cluster-setup, etc.) live under this single directory on the Mac. They are NOT automatically sourced from their respective app repos.
+| Before | After |
+|--------|-------|
+| hostPath PV mounting `/Users/nila/Developer/agents/docs/` | `emptyDir` shared between nginx + git-puller sidecar |
+| Tied to specific Mac path | Fully portable |
+| Manual file copy for new apps | Auto-discovered from GitHub |
+| No versioning | Per-app docs version-controlled in each app repo |
+| Single `_sidebar.md` maintained by hand | Auto-generated on every sync cycle |
 
-## The problem
-
-- **Not portable:** clone this repo on a different machine and the pod starts, but `$DOCS_HOST_PATH` is empty until you manually populate it.
-- **Docs drift:** docs in `agents/docs/homelab-k8s-setup/apps/<app>/` can diverge from docs in each app's own repo (`/apps/<app>/docs/`). Right now the `agents/docs/` copies are authoritative.
-- **Manual sync:** adding a new app's docs means manually copying files into `agents/docs/`.
-
-## Planned future: git-sync sidecar
-
-Replace the hostPath PV with a [git-sync](https://github.com/kubernetes/git-sync) sidecar that pulls docs from a dedicated `homelab-docs` git repo (or a mono-repo of symlinked submodule refs) into an `emptyDir` volume.
-
-### Target architecture
+## New architecture
 
 ```
-git-sync sidecar
-  ↓ clones/pulls
-emptyDir shared volume (e.g. /docs)
-  ↓ mounted into
-nginx container at /usr/share/nginx/html/docs
+git-puller sidecar (bitnami/git)
+  ↓  queries GitHub API for seenimurugan/* repos with docs/
+  ↓  clones/pulls each into emptyDir at /docs-aggregated
+  ↓  auto-generates _sidebar.md
+
+emptyDir (/docs-aggregated)  ← shared between both containers
+  ↓  mounted read-only
+
+nginx container
+  ↓  serves /usr/share/nginx/html → /docs-aggregated
+  ↓  docsify renders .md files in the browser
 ```
 
-Each app repo would own its `docs/` folder. A top-level `homelab-docs` repo (or git submodules) would aggregate them. git-sync polls on a configurable interval.
+## Auth: gh CLI token (not a PAT)
 
-### Benefits
+The GitHub token is extracted from the user's existing `gh` CLI session at deploy time:
 
-- Fully portable: works on any node with internet access
-- Docs are version-controlled per app
-- No manual file-copy step for new apps
-- Pod restarts pick up the latest docs automatically
+```bash
+GITHUB_TOKEN=$(gh auth token)
+kubectl create secret generic docs-puller-secret \
+  -n homelab \
+  --from-literal=GITHUB_TOKEN="$GITHUB_TOKEN" \
+  --dry-run=client -o yaml | kubectl apply -f -
+```
 
-### Migration steps (when ready)
+No manual PAT creation. If you re-authenticate with `gh`, re-run `./deploy.sh` to refresh the secret.
 
-1. Create a `seenimurugan/homelab-docs` repo (or use submodules in this repo).
-2. Move per-app docs from `agents/docs/<app>/` into `<app-repo>/docs/` and push.
-3. Aggregate via `homelab-docs` with submodule or sparse-checkout.
-4. Add git-sync sidecar to `k8s/docs-server.yaml`:
-   - Replace PV/PVC with `emptyDir`
-   - Add `initContainer` + sidecar for `registry.k8s.io/git-sync/git-sync:v4`
-   - Mount the shared emptyDir into both git-sync and nginx containers
-5. Remove hostPath PV/PVC from the manifest.
-6. Update `.env.example` — `DOCS_HOST_PATH` becomes `DOCS_GIT_REPO` + `DOCS_GIT_BRANCH`.
+## Repo for top-level docs
 
-### Not yet done because
+A new repo [`seenimurugan/homelab-docs`](https://github.com/seenimurugan/homelab-docs) holds the landing page (`docs/README.md`) and sidebar reference (`docs/_sidebar.md`). The puller symlinks its files into the aggregated root and auto-generates the live sidebar from the full repo tree.
 
-- All app docs are currently in `agents/docs/` and have not been migrated to per-app repos yet.
-- The live-edit benefit of hostPath (edit .md → refresh → see change) would be lost with git-sync unless a local git push workflow is set up.
-- Single-node OrbStack setup: hostPath works perfectly today and has zero complexity.
+## Auto-discovery
+
+The puller queries `https://api.github.com/users/seenimurugan/repos` and filters to repos that have a `docs/` folder. No manual repo list — push a `docs/` folder to any `seenimurugan/*` repo and it appears automatically within 5 minutes.
+
+## Old state (for reference)
+
+Previously: all per-app docs lived under `/Users/nila/Developer/agents/docs/` as subfolders, served via a hostPath PV. The `docs/` folders in each app repo existed but were NOT served by the live site.
+
+## Fallback
+
+The legacy manifest is preserved at `k8s/docs-server-legacy-hostpath.yaml`. To revert:
+1. Set `DOCS_SOURCE=hostpath` in `.env`
+2. Re-run `./deploy.sh`
