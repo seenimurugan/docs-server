@@ -2,6 +2,8 @@
 
 > **Status: COMPLETED** — The migration from hostPath to a git-puller sidecar was completed on 2026-05-30.
 
+**On this page:** [What changed](#what-changed) · [New architecture](#new-architecture) · [Auth: gh CLI token (not a PAT)](#auth-gh-cli-token-not-a-pat) · [Repo for top-level docs](#repo-for-top-level-docs) · [Auto-discovery](#auto-discovery) · [Old state (for reference)](#old-state-for-reference) · [Fallback](#fallback)
+
 ## What changed
 
 | Before | After |

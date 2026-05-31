@@ -1,5 +1,7 @@
 # Docs site — Maintenance
 
+**On this page:** [Deploy / redeploy](#deploy--redeploy) · [Common operations](#common-operations) · [Update sidebar](#update-sidebar) · [Update Docsify configuration](#update-docsify-configuration) · [Troubleshooting](#troubleshooting)
+
 ## Deploy / redeploy
 
 ```bash

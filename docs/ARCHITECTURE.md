@@ -1,5 +1,7 @@
 # Docs site — Architecture & Tech Stack
 
+**On this page:** [Deployment diagram](#deployment-diagram) · [What is it](#what-is-it) · [Tech stack](#tech-stack) · [Current content architecture](#current-content-architecture) · [Source code](#source-code) · [Design decisions](#design-decisions) · [How content gets to the site](#how-content-gets-to-the-site) · [Why this serves multi-app docs](#why-this-serves-multi-app-docs) · [Future: migration to git-sync](#future-migration-to-git-sync) · [Reference](#reference)
+
 ## Deployment diagram
 
 ```mermaid

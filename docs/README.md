@@ -4,6 +4,8 @@ Self-hosted nginx + Docsify static site that renders all the homelab markdown do
 
 Source: `/Users/nila/Developer/apps/docs-server/`
 
+**On this page:** [Access](#access) · [What it does](#what-it-does) · [Stack & framework](#stack--framework) · [Storage](#storage) · [See also](#see-also) · [File reference](#file-reference)
+
 ---
 
 ## Access
