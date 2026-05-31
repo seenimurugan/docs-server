@@ -2,6 +2,8 @@
 
 How to add, edit, and manage content on the docs site at https://docs.stoat-perch.ts.net.
 
+**On this page:** [Read on phone / laptop](#read-on-phone--laptop) · [Add a new file](#add-a-new-file) · [Add to the sidebar](#add-to-the-sidebar) · [Edit existing files](#edit-existing-files) · [Delete files](#delete-files) · [URL routing rules](#url-routing-rules) · [Caching gotcha](#caching-gotcha)
+
 ## Read on phone / laptop
 
 Just open the URL. Docsify-powered, fully responsive, dark mode follows system. Search bar at top-left works.
