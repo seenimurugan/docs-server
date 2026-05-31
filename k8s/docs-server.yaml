@@ -161,7 +161,7 @@ data:
           name: 'Homelab',
           loadSidebar: '_sidebar.md',
           homepage: 'README.md',
-          subMaxLevel: 3,
+          subMaxLevel: 0,
           maxLevel: 4,
           relativePath: true,
           search: {
