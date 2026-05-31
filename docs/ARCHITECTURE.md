@@ -1,5 +1,16 @@
 # Docs site — Architecture & Tech Stack
 
+## Deployment diagram
+
+```mermaid
+graph TD
+    A[Browser on Tailnet] -->|HTTPS| B[Tailscale Ingress\ndocs.stoat-perch.ts.net]
+    B --> C[docs-server Service\nport 80]
+    C --> D[nginx Pod]
+    D -->|read-only hostPath mount| E[Mac filesystem\n/Users/nila/Developer/agents/docs/]
+    D -->|ConfigMap| F[nginx.conf + index.html\nDocsify SPA]
+```
+
 ## What is it
 
 A tiny static-file server that renders the homelab markdown docs as a browsable web site via Docsify (client-side JS).

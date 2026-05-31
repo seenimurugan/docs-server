@@ -1,32 +1,62 @@
-# Docs site — overview
+# Docs site — homelab documentation server
 
-The page you're reading. Self-hosted nginx + Docsify static site that serves all the markdown docs under `$DOCS_HOST_PATH` (default: `/Users/nila/Developer/agents/docs/`).
+Self-hosted nginx + Docsify static site that renders all the homelab markdown docs at `https://docs.stoat-perch.ts.net`. Content is live-mounted from `$DOCS_HOST_PATH` (default: `/Users/nila/Developer/agents/docs/`) — edit any `.md` on the Mac, refresh the browser, and the change is live immediately. No build, no restart.
+
+Source: `/Users/nila/Developer/apps/docs-server/`
+
+---
 
 ## Access
 
 | Where | URL |
 |---|---|
-| **iPhone / family on Tailscale** | https://docs.stoat-perch.ts.net |
-| **Debug port-forward** | `kubectl -n homelab port-forward svc/docs 8090:80` → http://localhost:8090 |
-| **In-cluster** | http://docs.homelab.svc.cluster.local |
+| **Phone / family on Tailscale** | https://docs.stoat-perch.ts.net |
+| **Cluster DNS** (other pods / Mac shell) | http://docs-server.homelab.svc.cluster.local |
+| **Ad-hoc debug port-forward** | `kubectl -n homelab port-forward svc/docs-server 8090:80` → http://localhost:8090 |
 
-## Detailed docs
+No credentials — the docs site is read-only and public within the tailnet.
 
-- [USAGE](USAGE.md) — add/edit/delete files, sidebar updates, URL routing, caching gotchas
-- [MAINTENANCE](MAINTENANCE.md) — restart, config changes, troubleshooting
-- [ARCHITECTURE](ARCHITECTURE.md) — tech stack (nginx + Docsify), data layout, design decisions
-- [MIGRATION-TO-GIT-SYNC](MIGRATION-TO-GIT-SYNC.md) — planned future move from hostPath to git-sync
+---
 
-## How content updates work
+## What it does
 
-Live mount — edit any `.md` in `$DOCS_HOST_PATH`, refresh page, see the change. No build, no restart.
+- Renders every `.md` file under `$DOCS_HOST_PATH` as a browsable Docsify site.
+- Sidebar navigation (global `_sidebar.md`; per-folder sidebars for app-specific context).
+- Client-side full-text search via the Docsify search plugin.
+- Syntax highlighting (Prism.js) for bash, yaml, json blocks.
+- Live mount — no restart needed for content changes.
 
-## How to deploy
+---
 
-```bash
-git clone https://github.com/seenimurugan/docs-server
-cd docs-server
-cp .env.example .env
-# Edit DOCS_HOST_PATH if your docs folder is not at the default location
-./deploy.sh
-```
+## Stack & framework
+
+| Layer | Tech |
+|---|---|
+| Web server | nginx (Alpine, ~25 MB) |
+| Renderer | Docsify v4 (client-side JS) |
+| Search | Docsify search plugin (client-side) |
+| Content source | hostPath PV → `$DOCS_HOST_PATH` on the Mac filesystem |
+| Config | nginx.conf + index.html in ConfigMap |
+| Deploy | Kubernetes (`homelab` namespace), Tailscale Ingress |
+
+---
+
+## Storage
+
+No database and no writable PVC. The docs pod mounts `$DOCS_HOST_PATH` **read-only** (hostPath PV). All writes happen on the Mac filesystem directly.
+
+---
+
+## See also
+
+- [Usage guide](USAGE.md) — add/edit/delete files, sidebar updates, URL routing, caching gotchas
+- [Maintenance](MAINTENANCE.md) — restart, config changes, troubleshooting
+- [Architecture](ARCHITECTURE.md) — nginx + Docsify design, content layout, hash routing
+- [Migration to git-sync](MIGRATION-TO-GIT-SYNC.md) — planned future move from hostPath to git-sync
+
+## File reference
+
+| File | Purpose |
+|---|---|
+| `/Users/nila/Developer/apps/docs-server/k8s/docs-server.yaml` | Deployment + Service + Ingress + ConfigMap (nginx.conf + index.html) |
+| `$DOCS_HOST_PATH` (default: `/Users/nila/Developer/agents/docs/`) | Markdown content (live-mounted; NOT in this repo) |
