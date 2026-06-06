@@ -74,6 +74,28 @@ if [[ "$DOCS_SOURCE" == "gitsync" ]]; then
 
   # -- 5d. Apply the gitsync manifest -----------------------------------------
   K8S_FILE="$SCRIPT_DIR/k8s/docs-server.yaml"
+# ── Apply SealedSecrets (GitOps secrets, encrypted-in-git) ────────────────────
+# SealedSecrets in k8s/sealed/ are committed encrypted; the in-cluster
+# sealed-secrets controller (kube-system) decrypts them into real Secrets with
+# identical values. This is ADDITIVE and the SAFE DR path on a rebuilt cluster.
+#
+# NOTE: the .env → `kubectl create secret` step above is intentionally KEPT as a
+# documented FALLBACK (no big-bang cutover). On a cluster where a plain Secret
+# of the same name already exists, the controller will NOT overwrite it unless
+# it carries the annotation sealedsecrets.bitnami.com/managed=true — so applying
+# these is non-disruptive. See cluster-setup/secrets-dr/README.md for cutover.
+SEALED_DIR="$SCRIPT_DIR/k8s/sealed"
+if [ -d "$SEALED_DIR" ] && kubectl get crd sealedsecrets.bitnami.com >/dev/null 2>&1; then
+  echo "[deploy] Applying SealedSecrets from k8s/sealed/ (controller present)..."
+  for f in "$SEALED_DIR"/*.yaml; do
+    [ -e "$f" ] || continue
+    echo "  → $f"
+    kubectl apply -f "$f"
+  done
+else
+  echo "[deploy] SealedSecrets controller not found (crd sealedsecrets.bitnami.com missing) — skipping k8s/sealed/; relying on .env-created Secrets above."
+fi
+
   echo "Applying k8s manifest (envsubst → kubectl apply)..."
   # Export all required env vars for envsubst
   # IMPORTANT: pass an explicit substitution list so that $GITHUB_TOKEN and other
